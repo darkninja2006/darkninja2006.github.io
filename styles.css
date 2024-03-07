@@ -11,8 +11,15 @@ body {
 font-family: 'Raleway', sans-serif; 
 margin: 0px;
 padding: 0px;
+background-color:rgb(192, 178, 160);
 }
 
 .header h1 {
 font-weight: 700; 
+}
+
+.header-shadow{
+    width: 100%;
+    background-color: rgb(203, 191, 172);
+    height: 5px;
 }
