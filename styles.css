@@ -23,3 +23,11 @@ font-weight: 700;
     background-color: rgb(203, 191, 172);
     height: 5px;
 }
+
+.logo-container {
+    background-color: white;
+    width: 200px;
+    height:  auto;
+    border-radius: 10%;
+    padding: 10px;
+}
