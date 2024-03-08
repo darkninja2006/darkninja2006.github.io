@@ -27,6 +27,7 @@ font-weight: 700;
 .rounded-image{
     border-radius: 10%;
 }
+
 .logo-container {
     background-color: white;
     width: 500px;
@@ -37,40 +38,28 @@ font-weight: 700;
     display: flex;
 }
 
-.textbubble-container {
-    /* Remove width property */
-    margin: 20px;
-    display: flex;
-}
 
-.textbubble-title {
-    background-color: white;
-    padding: 10px;
+.scrollable-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
-    position: absolute;
-    top: 90px;
-    right: 0;
-    margin: 10px;
-    height: 55px;
-    font-size: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.textbubble-scrollable {
-    /* Remove width property */
-    margin: 20px;
-    display: flex;
-}
-
-.textbubble {
-    background-color: white;
+.text-title {
+    background-color: #f2f2f2;
     padding: 10px;
-    border-radius: 10%; /* This should probably be 10px instead of 10% */
-    position: absolute;
-    top: 180px;
-    right: 0;
-    margin: 10px;
-    height: 150px;
-    font-size: 16px;
-    width: 25%; /* Set width to 100% to fill the parent */
+    border-radius: 10px 10px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.scrollable-text {
+    max-height: 200px;
     overflow-y: auto;
+    margin-top: 10px;
 }
