@@ -65,3 +65,36 @@ font-weight: 700;
     overflow-y: auto;
     margin-top: 10px;
 }
+
+}
+
+.image-container {
+    width: 300px; /* Adjust the width as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.image-container img {
+    animation: slide 6s linear infinite; /* Adjust the duration as needed */
+}
