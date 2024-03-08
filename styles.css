@@ -11,6 +11,8 @@ body {
 font-family: 'Raleway', sans-serif; 
 margin: 0px;
 padding: 0px;
+display: flex;
+flex-direction: column;
 background-color:rgb(192, 178, 160);
 }
 
@@ -36,8 +38,8 @@ font-weight: 700;
     padding: 10px;
     margin: 10px;
     display: flex;
+    align-items: center;
 }
-
 
 .scrollable-container {
     max-width: 400px;
