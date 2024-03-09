@@ -82,8 +82,6 @@ body {
     width: 500px; /* Adjust the width as needed */
     height: 250px; /* Adjust the height as needed */
     overflow: hidden;
-    border-radius: 10px;
-    background-color: white;
 }
 
 .image-container img {
@@ -92,27 +90,43 @@ body {
     display: block;
     position: absolute;
     top: 0;
+    border-radius: 10px;
     left: 0;
-    opacity: 1;
-    transition: opacity 1s ease-in-out; /* Adjust the transition duration as needed */
+    opacity: 0;
+    transition: opacity 3s ease-in-out; /* Adjust the transition duration as needed */
 }
 
-.image-container img:not(:first-child) {
-    opacity: 0;
+.image-container img.active {
+    opacity: 1;
 }
 
 @keyframes fadeInOut {
-    0%, 33.33% {
+    0%, 25% {
         opacity: 0;
     }
-    33.33%, 66.66% {
+    25.01%, 50% {
         opacity: 1;
     }
-    66.66%, 100% {
+    50.01%, 75% {
         opacity: 0;
+    }
+    75.01%, 100% {
+        opacity: 1;
     }
 }
 
 .image-container img {
     animation: fadeInOut 9s linear infinite; /* Adjust the duration as needed */
+}
+
+.image-container img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image-container img:nth-child(2) {
+    animation-delay: 3s; /* Adjust the delay to match the transition duration */
+}
+
+.image-container img:nth-child(3) {
+    animation-delay: 6s; /* Adjust the delay to match the transition duration */
 }
